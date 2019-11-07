@@ -11,8 +11,8 @@ import MultipeerConnectivity
 /// Class containing peerID and session state
 public class Peer {
 
-    var peerID: MCPeerID
-    var state: MCSessionState
+    public private(set) var peerID: MCPeerID
+    public private(set) var state: MCSessionState
 
     init(peerID: MCPeerID, state: MCSessionState) {
         self.peerID = peerID
