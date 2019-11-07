@@ -23,7 +23,7 @@ public class MultiPeer: NSObject {
     var serviceType: String!
 
     /** Device's name */
-    var devicePeerID: MCPeerID!
+    public private(set) var devicePeerID: MCPeerID!
 
     /** Advertises session */
     var serviceAdvertiser: MCNearbyServiceAdvertiser!
