@@ -12,7 +12,7 @@ import MultipeerConnectivity
 public class Peer {
 
     public private(set) var peerID: MCPeerID
-    public private(set) var state: MCSessionState
+    public internal(set) var state: MCSessionState
 
     init(peerID: MCPeerID, state: MCSessionState) {
         self.peerID = peerID
